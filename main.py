@@ -43,8 +43,22 @@ class TicTacToe:
            else:
                board_values.clear()
         
-
+        #check diagonals
+        for i in range(n):
+            board_values.add(self.board([i][i]))
+        if board_values == {player}:
+            return True
+        else:
+            board_values.clear()
         
+        board_values.add(self.board[0][2])
+        board_values.add(self.board[1][1])
+        board_values.add(self.board[2][0])
+        if board_values == {player}:
+            return True
+        else:
+            return True
+
 
 
 t = TicTacToe()
