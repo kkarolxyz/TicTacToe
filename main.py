@@ -59,7 +59,20 @@ class TicTacToe:
         else:
             return True
 
+        
+    def is_board_filled(self):
+       for row in self.board:
+           for item in row:
+               if item == '-':
+                   return False
+       return True
 
+    def swap_player_turn(self, player):
+       return 'X' if player == 'O' else 'O'
 
-t = TicTacToe()
-t.create_board()
+    def show_board(self):
+       for row in self.board:
+           for item in row:
+               print(item, end=' ')
+           print()
+
