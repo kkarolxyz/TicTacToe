@@ -1,4 +1,4 @@
-#tic-tac-toe/src/tic_tac_toe/logic/exceptions.py
+#tic_tac_toe/src/tic_tac_toe/logic/exceptions.py
 
 
 class InvalidGameState(Exception):
