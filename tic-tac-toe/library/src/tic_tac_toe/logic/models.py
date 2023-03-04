@@ -1,4 +1,4 @@
-#tic_tac_toe/logic/models.py
+#tic-tac-toe/src/tic_tac_toe/logic/models.py
 
 import enum
 import re
