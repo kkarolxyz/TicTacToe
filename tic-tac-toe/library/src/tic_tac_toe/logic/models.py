@@ -95,3 +95,11 @@ class GameState:
                         for match in re.finditer(r"\?", pattern)
                     ]
         return []  
+    
+    @cached_property
+    def possible_moves(self) -> list[Move]:
+        moves = []
+        if not self.game_over:
+            for match in re.finditer(r"\s", self.grid.cells):
+                moves.append(self.make_move_to(match.start()))
+        return moves
