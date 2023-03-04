@@ -5,6 +5,7 @@ import re
 from dataclasses import dataclass
 from functools import cached_property
 
+from tic_tac_toe.logic.
 
 WINNING_PATTERNS = (
     "???......",
